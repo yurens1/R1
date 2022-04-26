@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FaceHome"
+    android:background="#FFFFFF">
+
+
+    <EditText
+
+        android:id="@+id/text_loguin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:padding="10dp" />
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:id="@+id/image_google"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/googlelogo" />
+
+    <TextView
+        android:id="@+id/text_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@+id/image_google"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        />
+
+    <TextView
+
+        android:id="@+id/text_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Use your Google Acount"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_loguin"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Next"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_loguin"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Create account"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

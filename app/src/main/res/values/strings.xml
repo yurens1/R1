@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">R1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telephone">Telefone :</string>
+    <string name="name">Nome completo :</string>
+    <string name="email">Email :</string>
+    <string name="cpf">CPF :</string>
+</resources>

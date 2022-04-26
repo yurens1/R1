@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signHome">
+
+    <fragment
+        android:id="@+id/signHome"
+        android:name="com.example.r1.fragments.SignHome"
+        android:label="fragment_sign_home"
+        tools:layout="@layout/fragment_sign_home"
+        >
+        <action
+            android:id="@+id/action_signHome_to_googleHome"
+            app:destination="@id/googleHome" />
+        <action
+            android:id="@+id/action_signHome_to_emailHome"
+            app:destination="@id/emailHome" />
+        <action
+            android:id="@+id/action_signHome_to_faceHome"
+            app:destination="@id/faceHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleHome"
+        android:name="com.example.r1.GoogleHome"
+        android:label="fragment_google_home"
+        tools:layout="@layout/fragment_google_home" />
+    <fragment
+        android:id="@+id/faceHome"
+        android:name="com.example.r1.fragments.FaceHome"
+        android:label="fragment_face_home"
+        tools:layout="@layout/fragment_face_home" >
+        <action
+            android:id="@+id/action_faceHome_to_userlayout"
+            app:destination="@id/userlayout" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailHome"
+        android:name="com.example.r1.EmailHome"
+        android:label="fragment_email_home"
+        tools:layout="@layout/fragment_email_home" />
+    <fragment
+        android:id="@+id/userlayout"
+        android:name="com.example.r1.ui.userlayout"
+        android:label="fragment_userlayout"
+        tools:layout="@layout/fragment_userlayout" />
+
+</navigation>
